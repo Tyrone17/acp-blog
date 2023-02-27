@@ -1,0 +1,31 @@
+/*
+For header
+*/
+#header{
+    margin-left: 5px;
+    background-color:crimson;
+}
+
+/*
+For the Main Container Section
+*/
+
+#mainSection{
+    background-color:crimson;
+    /*text-decoration: aliceblue;*/
+}
+
+a.nav-link {
+    color: #000;
+    color: #000;
+    text-decoration-line:inherit;
+}
+
+#firstPost,#secondPost {
+    font-size:14px
+}
+
+.fakeimg2 {
+    height: 33%;
+    background: rgb(124, 116, 116);
+  }
