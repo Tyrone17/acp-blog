@@ -22,10 +22,15 @@ For the Main Container Section
     /* position:relative; */
     background-color:crimson;
     margin-left: 200px;
-    margin-right: 650px;
+    /* margin-right: 650px; */
     /* margin-bottom: 1px; */
     /* margin-top: -505px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#firstPostHead,#firstPostDesc {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 a.nav-link {
@@ -34,7 +39,7 @@ a.nav-link {
     text-decoration-line:inherit;
 }
 
-#firstPost,#secondPost,#firstPostHead,#firstPostDesc {
+#firstPost,#secondPost {
     font-size:14px;
     margin-left: 200px;
     margin-right: 650px;
