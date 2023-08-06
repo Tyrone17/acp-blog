@@ -14,39 +14,41 @@
   </style>
 </head>
 <body>
-
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0" nonce="1zhVQki1"></script>
 <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center"> -->
-  <nav id="nav" onoffline="showStylesOffline()"  class="navbar navbar-expand-sm bg-black text-center">
-    <div id="header" class="p-1 text-white text-center">
+  <nav id="nav" onoffline="showStylesOffline()"  class="">
+    <div id="header" class="">
       <!-- <a class="navbar-brand " href="#">logo</a> -->
       <h1>a_c_p</h1>
       <p>a_coloured_perspective</p> 
     </div>
-  <div class="container-fluid justify-content-center">
+  <div class="">
+    <a class="nav-link active" href="#"><em>have a perspective?</em></a>
     <ul class="navbar-nav">
-       <li class="nav-item">
-        <a class="nav-link active text-light" href="#">have a perspective?</a>
+       <!-- <li class="nav-item">
+      </li> -->
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">twitter</a> -->
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Hey! Check out my bullbars, the only type a pedestrian like me can use;" data-url="https://tyrone17.github.io/acp-blog" data-hashtags="qotd,makeitmakesense" data-dnt="true" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#">twitter</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-white" href="#">facebook</a>
+        <div class="fb-share-button" data-href="https://tyrone17.github.io/acp-blog" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftechserv-bit.co.za%2Findex.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
       </li>
     </ul>
   </div>
 </nav>
 
-<div id="mainSection" onoffline="showStylesOffline()" class="container mt-5">
-  <div class="row">
-    <div class="col-sm-4">
+<div id="mainSection" onoffline="showStylesOffline()" class="">
+  <div class="">
+    <div class="">
       <h2>about a_c_p</h2>
       <h5>a video about us instead</h5>
       <div><video id="video" width="330px" height="200px" controls autoplay="autoplay"><source src="video.mp4" type="video/mp4"></video></div>
       <p>Just click play - loadshedding fam</p>
-      <h3 class="mt-4">recent history</h3>
+      <h3 class="">recent history</h3>
       <p>whatumayhavemissed</p>
-      <ul class="nav nav-pills flex-column">
+      <ul class="nav nav-pills">
         <!--Levols ntwana-->
         <li class="nav-item">
           <a class="nav-link" href="pages\most_recent.html">Most recent</a>
@@ -58,27 +60,12 @@
           <a class="nav-link" href="#">recent</a>
         </li>
       </ul>
-      <hr class="d-sm-none">
+      <hr class="">
     </div>
-    <!--Get creative with the posts!-->
-    <!-- <div class="col-sm-8" id="postSection">
-      <h2 id="firstPostHead">BECAUSE OF YOU</h2>
-      <h5 id="firstPostDesc">a free verse prose piece, written Nov 12, 2022</h5>
-      <div onloadedmetadata="loadData()" class="fakeimg"><div id="firstPost"></div></div>
-      <!-- <p id="">Because of you...</p>
-      <div id="firstPostPara"></div> -->
-
-      <!-- For now hide this content -->
-      <!-- <h2 class="mt-5" id="secondPostHead">POST HEADING</h2>
-      <h5 id="secondPostDesc">POST description, Nov 11, 2022</h5>
-      <div class="fakeimg">PL</div>
-      <p id="secondPostLead">Some text..</p>
-      <p id="secondPostPara">Insert text from text file.</p> -->
-    <!-- </div> -->
     </div>
 </div>
 <!--Get creative with the posts!-->
-<div class="col-sm-8" id="postSection" onoffline="showStylesOffline()">
+<div class="" id="postSection" onoffline="showStylesOffline()">
   <h2 id="firstPostHead">BECAUSE OF YOU</h2>
   <h5 id="firstPostDesc">a free verse prose piece, written Nov 12, 2022</h5>
   <div onloadedmetadata="loadData()" class="fakeimg"><div id="firstPost"></div></div>
@@ -94,8 +81,8 @@
 </div>
 
 
-<div id="footer"class="mt-5 p-4 bg-dark text-white text-center">
-  <p>created by <a href="techserv-bit.co.za">techserv-bit.co.za</a> using a <a href="https://www.w3schools.com/">ws3schools</a> template</p>
+<div id="footer"class="">
+  <p>created by <a href="techserv-bit.co.za">techServ BIT</a> using <a href="https://www.w3schools.com/">ws3schools</a> & <a href="https://www.bootstrap.com/">bootstrap</a> templates</p>
 </div>
 
 <script>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>a_c_p</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Consider using Bootstrap plus cater for offline -->
+  <link href="styling.css" rel="stylesheet">
+  <script src="main.js"></script>
+  <script src="index.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+
+<!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center"> -->
+  <nav class="">
+    <div id="header" class="">
+      <!-- TODO: 
+      Add brand logo -->
+      <!-- <a class="" href="#">logo</a> -->
+      <h1>a_c_p</h1>
+      <p>a_coloured_perspective</p> 
+    </div>
+  <div class="">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">most recent</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="index.html">have a perspective?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">twitter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">facebook</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="mainSection" class="">
+  <div class="">
+    <div class="">
+      <h2>about a_c_p</h2>
+      <h5>a video about us instead</h5>
+      <div><video id="video" width="330px" height="200px" controls autoplay="autoplay"><source src="video.mp4" type="video/mp4"></video></div>
+      <p>Just click play - loadshedding fam</p>
+      <h3 class="">recent history</h3>
+      <p>whatumayhavemissed</p>
+      <ul class="nav nav-pills">
+        <!--Levols ntwana-->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Most recent</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link " href="#">even more recent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">recent</a>
+        </li>
+      </ul>
+      <hr class="">
+    </div>
+  </div>
+</div>
+<div id="postSection"class="">
+  <h2 id="firstPostHead">TBC</h2>
+  <h5 id="firstPostDesc">a free verse prose piece, written Feb 25, 2023</h5>
+  <div class="fakeimg2"><div onloadedmetadata="loadData()" class="" id="firstPost"></div></div>
+  <!-- <p id="">Because of you...</p>
+  <div id="firstPostPara"></div> -->
+
+  <!-- For now hide this content -->
+  <h2 class="" id="secondPostHead">TBC Part 2</h2>
+  <h5 id="secondPostDesc">a free verse prose piece, written Feb 25, 2023</h5>
+  <div class="fakeimg2"><div class="" onloadedmetadata="loadData()" id="secondPost"></div></div>
+  <!-- <p id="secondPostLead">Some text..</p>
+  <p id="secondPostPara">Insert text from text file.</p> -->
+</div>
+
+<div id="footer"class="">
+  <p>created by <a href="techserv-bit.co.za">techserv-bit.co.za</a> using a <a href="https://www.w3schools.com/">ws3schools</a> template</p>
+</div>
+
+<script>
+  var text = ['I smoked alot and this is tobacco and weed,','Nothing but passing gas.', 'I get stimmed.', 'And I flop.', 'How rock bottom of me.', 'But I light another naai still.', 'No bloody chill - just tips of drills,'];//, "That don't look like 'em"];
+  var text2 = ["I mean alot bruv, like on some 340","In the morning, dude I'm yawning coz","She be fawning and I'm adoring", "She be that alluring and I finna conjure a 'we'","to be honest a mini mi, or you",
+  "Either way don't be so hard on yourself,", "It's not too good for your wealth"];
+
+  function loadData() {
+    // document.getElementById("firstPost").innerHTML= show.
+    text.forEach(element => document.getElementById("firstPost").innerHTML += element + "<br>");
+    text2.forEach(element => document.getElementById("secondPost").innerHTML += element + "<br>");
+}
+
+loadData();
+
+</script>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+</body>
+</html>

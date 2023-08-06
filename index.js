@@ -1,6 +1,8 @@
 var fs = require('fs');
 const { parse } = require('path');
-var file = 'C:\\GitRepos\\acp-blog\\sheet1.xml'
+const { arrayBuffer } = require('stream/consumers');
+var file = 'C:\\GitRepos\\acp-blog\\README.md'
+var file = 'C:\\GitRepos\\acp-blog\\world_cities.csv'
 // var file = 'C:\Python311\Tools\demo\sheet1.xml'
 var array;
 
@@ -8,14 +10,18 @@ function hitMe () {
 fs.readFile(file, 'utf8', function(err, data) {
     // TODO: create a global var to store the data
     array = data;
-    var test = array.match(["<string>"],null)
-    //console.log(test);
-    // console.log(test.input.startsWith("<string>"))
+    // array.split("\n");
+    // const re = /d\/d\/d\/d/g ;
+    // const re = /w\W\/w\W\/w\W\/w\W\/w/g;
+    // var show = array.split(re).join(",");
+    // console.log(array.split())
+    // console.log(array[72617])
     //console.log(test.input.valueOf())
     //console.log(test.input.valueOf().split(["<string></string>"]))
-    var show = test.input.valueOf()
-    //console.log(show[0]);
-    return show;
+    JSON.stringify(array, (key, value) => {
+      console.log(value)
+    });
+    return ;
   });
   
 }
