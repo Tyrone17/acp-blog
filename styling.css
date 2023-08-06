@@ -19,10 +19,12 @@ For the Main Container Section
 }
 
 #postSection {
+    position:relative;
     background-color:crimson;
-    margin-left: 700px;
-    margin-bottom: 1px;
-    margin-top: -505px;
+    margin-left: 200px;
+    margin-right: 650px;
+    /* margin-bottom: 1px; */
+    /* margin-top: -505px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
