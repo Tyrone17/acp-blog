@@ -19,7 +19,7 @@ For the Main Container Section
 }
 
 #postSection {
-    position:relative;
+    /* position:relative; */
     background-color:crimson;
     margin-left: 200px;
     margin-right: 650px;
@@ -34,8 +34,10 @@ a.nav-link {
     text-decoration-line:inherit;
 }
 
-#firstPost,#secondPost {
-    font-size:14px
+#firstPost,#secondPost,#firstPostHead,#firstPostDesc {
+    font-size:14px;
+    margin-left: 200px;
+    margin-right: 650px;
 }
 
 #footer {
