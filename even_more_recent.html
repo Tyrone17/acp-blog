@@ -4,7 +4,7 @@
   <title>a_c_p</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Consider using Bootstrap plus cater for offline -->
+  <!-- Consider not using Bootstrap plus cater for offline -->
   <link href="styling.css" rel="stylesheet">
   <script src="main.js"></script>
   <script src="index.js"></script>
@@ -17,12 +17,12 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v17.0" nonce="1zhVQki1"></script>
 
-  <!--Navbar-->
+<!--Navbar-->
 <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center"> -->
   <nav class="">
     <div id="header" class="">
       <!-- <a class="navbar-brand " href="#">logo</a> -->
-      <a><h1>a_c_p</h1></a>
+      <a href="#"></a><h1>a_c_p</h1></a>
       <p>a_coloured_perspective</p> 
     </div>
   <div class="">
@@ -52,9 +52,10 @@
       <h3 class="">recent history</h3>
       <p>whatumayhavemissed</p>
       <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link " href="even_more_recent.html">even more recent</a>
-        </li>
+        <!-- Comment this out to see the demo live -->
+        <!-- <li class="nav-item">
+          <a class="nav-link " href="#">even more recent</a>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="recent.html">recent</a>
         </li>
@@ -64,15 +65,16 @@
   </div>
 </div>
 <div id="postSection"class="">
-  <h2 id="firstPostHead">TBC</h2>
-  <h5 id="firstPostDesc">a free verse prose piece, written Feb 25, 2023</h5>
+  <!-- New piece to showcase in JS section -->
+  <h2 id="firstPostHead">Passion Kiss</h2>
+  <h5 id="firstPostDesc">a free verse prose piece, written 15 Apr, 2023</h5>
   <div class="fakeimg2"><div onloadedmetadata="loadData()" class="" id="firstPost"></div></div>
   <!-- <p id="">Because of you...</p>
   <div id="firstPostPara"></div> -->
 
-  <!-- For now hide this content -->
-  <h2 class="" id="secondPostHead">TBC Part 2</h2>
-  <h5 id="secondPostDesc">a free verse prose piece, written Feb 25, 2023</h5>
+  <!-- New piece to showcase in JS section -->
+  <h2 class="" id="secondPostHead">Yes I judge myself</h2>
+  <h5 id="secondPostDesc">a free verse prose piece, written Dec 25, 2021</h5>
   <div class="fakeimg2"><div class="" onloadedmetadata="loadData()" id="secondPost"></div></div>
   <!-- <p id="secondPostLead">Some text..</p>
   <p id="secondPostPara">Insert text from text file.</p> -->
@@ -83,9 +85,8 @@
 </div>
 
 <script>
-  var text = ['I smoked alot and this is tobacco and weed,','Nothing but passing gas.', 'I get stimmed.', 'And I flop.', 'How rock bottom of me.', 'But I light another naai still.', 'No bloody chill - just tips of drills,'];//, "That don't look like 'em"];
-  var text2 = ["I mean alot bruv, like on some 340","In the morning, dude I'm yawning coz","She be fawning and I'm adoring", "She be that alluring and I finna conjure a 'we'","to be honest a mini mi, or you",
-  "Either way don't be so hard on yourself,", "It's not too good for your wealth"];
+  var text = ["Passion Kiss, I inhaled, Held breath, Wait abated, Head sobering, What was, We doing? Playing cross, The T, to it, Gm F Two Tone, To and, Flow so Passioned kiss?"];
+  var text2 = ["this is about me, myself and I. for me to finally demystify, the things I tend to first amplify, as if I'm being crucified, held back, proverbial visa denied. wandering where I went awry. clearly preoccupied I mused, did I?. trying without a jury to ratify; this plantiff seeking sanctified status. and as I pen this, with hope to testify. that that day personifies, with my verdict, my soul satisfied. my sense of self, solidified"];
 
   function loadData() {
     // document.getElementById("firstPost").innerHTML= show.
