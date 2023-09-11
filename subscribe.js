@@ -1,9 +1,55 @@
 // create IDs
 acpusubID = Date.now();
+<<<<<<< Updated upstream
 var localEID = localStorage.setItem("subID", acpuserID);
 var localRID = localStorage.getItem("subID");
 var currentUser =[
     acpuserID=localRID,
+=======
+localStorage.setItem("subID", acpusubID);
+var oSubID = localStorage.getItem("subID");
+console.log(typeof oSubID);
+
+function add(){
+  getAtt();
+  person = [
+    user=who,
+    wallet=coins,
+    tx=transactions
+  ];
+  
+  localStorage.setItem("person",person);
+  
+}
+
+function getAtt(){
+  // Fetch form data vars to use
+  
+  // Fetch user consent check
+  var c = document.getElementById("tac").textContent;
+  var consent = c.charAt(6)
+  var e = document.getElementById("email").value;
+  var n = document.getElementById("number").value;
+  subscriberInfoDB = [ 
+    currentUserEmail= e,
+    currentUserNum= n,
+    consentGiven= consent,
+    oSubID= oSubID
+  ];
+  console.log(subscriberInfoDB)
+  localStorage.setItem("subscriberInfoDB",subscriberInfoDB)
+ 
+  return ;
+}
+
+
+// TODO fetch from other pages script
+var user = localStorage.getItem("userID");
+
+
+// TODO Verify email in from
+
+>>>>>>> Stashed changes
 
 ];
 // Verify email first in from
