@@ -6,12 +6,6 @@ console.log(typeof oSubID);
 
 function add(){
   getAtt();
-  person = [
-    user=who,
-    wallet=coins,
-    tx=transactions
-  ];
-  
   localStorage.setItem("person",person);
   
 }
@@ -36,8 +30,6 @@ function getAtt(){
   return ;
 }
 
-document.getElementById("subLink").style.display = "hidden";
-
 // TODO fetch from other pages script
 var user = localStorage.getItem("userID");
 
@@ -55,6 +47,12 @@ console.log("acp-blog webapp: v1.0.1");
 var who = oSubID;
 var coins = ecoins;
 var transactions =[];
+
+person = [
+  user=who,
+  wallet=coins,
+  tx=transactions
+];
 
 function createSubscriber (user,coins){
     // Exec the code to create incesion into app.
