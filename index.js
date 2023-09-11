@@ -1,39 +1,30 @@
-var fs = require('fs');
-const { parse } = require('path');
-const { arrayBuffer } = require('stream/consumers');
-var file = 'C:\\GitRepos\\acp-blog\\README.md'
-var file = 'C:\\GitRepos\\acp-blog\\world_cities.csv'
-// var file = 'C:\Python311\Tools\demo\sheet1.xml'
-var array;
-
-function hitMe () {
-fs.readFile(file, 'utf8', function(err, data) {
-    // TODO: create a global var to store the data
-    array = data;
-    // array.split("\n");
-    // const re = /d\/d\/d\/d/g ;
-    // const re = /w\W\/w\W\/w\W\/w\W\/w/g;
-    // var show = array.split(re).join(",");
-    // console.log(array.split())
-    // console.log(array[72617])
-    //console.log(test.input.valueOf())
-    //console.log(test.input.valueOf().split(["<string></string>"]))
-    JSON.stringify(array, (key, value) => {
-      console.log(value)
-    });
-    return ;
-  });
-  
-}
-
-hitMe ();
-
-// function showStylesOffline() {
-//   document.getElementById("mainSection").style.marginLeft = "200px";
-//   document.getElementById("mainSection").style.marginRight = "700px";
-//   document.getElementById("postSection").style.marginLeft = "700px";
-//   document.getElementById("postSection").style.marginBottom = "1px";
-//   document.getElementById("postSection").style.marginTop = "-500px";
-//   document.getElementById("nav").style.marginRight = "100px";
+// function subscriberStyle() {
+//   document.getElementById("nav").style.backgroundColor = "crimson";
 // }
 
+//  ------------------------------------------------------------------------------------------------------------------------
+//  ------------------------------------------------------------------------------------------------------------------------
+
+console.log("'success factors in mistakes'- Tyrone Maasdorp");
+acpuserID = Date.now();
+// var localID = localStorage.setItem("userID", acpuserID);
+var tSubID = localStorage.getItem("subID");
+var tUserID = localStorage.getItem("userID");
+var jvar = localStorage.getItem("userDB");
+var eAllocation= 0.0001;
+// console.log("tSubId=" +tSubID+" ,tUserID="+tUserID);
+
+// Verify email first in from
+// 	TODO
+
+// START app
+console.log("acp-blog webapp");
+
+console.log("acpuser: " + acpuserID);
+// error starts from here
+console.log("DB info: " + jvar);
+
+console.log(tSubID, eAllocation)
+sPerson = {ACPuserID:tUserID, eAllocation:eAllocation, number:"0843679037", email:"techerv-bit.co.za"};
+localStorage.setItem("person",sPerson)
+console.log("Number on file: "+sPerson.number, " current balance of e-token: " + eAllocation)

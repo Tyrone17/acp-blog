@@ -1,7 +1,18 @@
 <!DOCTYPE html>
+<!--Copyright (c) 2020, TechServ Business IT
+    All rights reserved.
+    
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are met:
+    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+    3. All advertising materials mentioning features or use of this software must display the following acknowledgement: This product includes software developed by the TechServ Business IT
+    4. Neither the name of the TechServ Business IT nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+    
+    THIS SOFTWARE IS PROVIDED BY TechServ Business IT ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL TechServ Business IT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 <html lang="en">
 <head>
-  <title>a_c_p</title>
+  <title>a_c_p &#169 2020-23</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Consider using Bootstrap plus cater for offline -->
@@ -82,20 +93,28 @@
   <div class="fakeimg2"><div class="" onloadedmetadata="loadData()" id="secondPost"></div></div>
   <!-- <p id="secondPostLead">Some text..</p>
   <p id="secondPostPara">Insert text from text file.</p> -->
+  
+  <h2 class="" id="thirdPostHead">Moonshine</h2>
+  <h5 id="thirdPostDesc">a prose piece, written Apr 23, 2023</h5>
+  <div class="fakeimg2"><div class="" onloadedmetadata="loadData()" id="thirdPost"></div></div>
+  <!-- <p id="secondPostLead">Some text..</p>
+  <p id="secondPostPara">Insert text from text file.</p> -->
 </div>
 
 <div id="footer"class="">
-  <p>created by <a href="techserv-bit.co.za">techServ BIT</a> using <a href="https://www.w3schools.com/">ws3schools</a> & <a href="https://www.bootstrap.com/">bootstrap</a> templates</p>
+  <p>created by <a href="techserv-bit.co.za">techServ BIT</a> using <a href="https://www.bootstrap.com/">bootstrap</a> templates</p
 </div>
 
 <script>
-  var text = ["Got to the heavenly gates, No bill was waiting for me, just hate. So glad then I got the purple stuffing, Makes getting made much like a Hufflepuff. There's no floor, just lies everywhere as if gore, Is just a music video staring miss love galore. Eyoh, am I not a whore all of a sudden, My cocoa leaves yet to go bud. Sun, I choose you, so the responsibility now; Rests gently on the snow white owl. Funny thing to compare too. But boo, that's why you cock your head past two."];
-  var text2 = ["Misnomer. This is all this is. It's a name of a thing. Could have been 'kuku li ku'. So start there. It can be flameable. Moves under pressure. Yet intangible. That's gas (half of them). Steam-powered? Gas-powered. See now nature's wonder hung: Natural has many meanings, because context is Key here lies in association you see, I looked it up, Since we are relating to chemistry by virtue of it, The kind that occurs in nature; and but for human extraction, it happens without us. Moreover, it's reactions stem from deep in the bottom of Earth. Now if you arguing Earth; made of land and sea is not naturally occuring... Then maybe US English needs the rooster chnage sought for by this skit."];
+  var text = ["Got to the heavenly gates"," No bill was waiting for me, just hate. ","So glad then I got the purple stuffing,","Makes getting made much like a Hufflepuff. ","There's no floor, just lies everywhere as if gore, ","Is just a music video staring miss love galore. ","Eyoh, am I not a whore all of a sudden, My cocoa leaves yet to go bud. ","Sun, I choose you, so the responsibility now; ","Rests gently on the snow white owl. ","Funny thing to compare too. But boo, that's why you cock your head past two."];
+  var text2 = ["Misnomer. ","This is all this is. ","It's a name of a thing. ","Could have been 'kuku li ku'. ","So start there. ","It can be flameable. Moves under pressure. Yet intangible. :","That's gas (half of them). Steam-powered?"," Gas-powered. See now nature's wonder hung:"," Natural has many meanings, because context is:"," Key here lies in association you see,:","I looked it up, :","Since we are relating to chemistry by virtue of it,"," The kind that occurs in nature;"," and but for human extraction, it happens without us. ","Moreover, it's reactions stem from deep in the bottom of Earth.","Now if you arguing Earth; made of land and sea is not naturally occuring... ","Then maybe US English needs the rooster chnage sought for by this skit."];
+  var text3 = ["You decided to wear that silky number,","You got for you, and to me that's too","Much akready. I love that way,","You fall out the sky - so out of blue.","Feeling sneaky, smiling with your head","Cocked to the side, nowhere near crooked","So we ain't going to need to TLC.","Maybe some Ingrams, since you only","Brought acandle. I guess not even our","Bodies need to know what happpens next","Let me pour us more of this moonshine"];
 
   function loadData() {
     // document.getElementById("firstPost").innerHTML= show.
     text.forEach(element => document.getElementById("firstPost").innerHTML += element + "<br>");
     text2.forEach(element => document.getElementById("secondPost").innerHTML += element + "<br>");
+	text3.forEach(element => document.getElementById("thirdPost").innerHTML += element + "<br>");
 }
 
 loadData();

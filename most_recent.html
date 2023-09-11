@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Copyright (c) 2020, TechServ Business IT
+    All rights reserved.
+    
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are met:
+    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+    3. All advertising materials mentioning features or use of this software must display the following acknowledgement: This product includes software developed by the TechServ Business IT
+    4. Neither the name of the TechServ Business IT nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+    
+    THIS SOFTWARE IS PROVIDED BY TechServ Business IT ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL TechServ Business IT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 <head>
-  <title>a_c_p</title>
+  <title>a_c_p &#169 2020-23</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Consider using Bootstrap plus cater for offline -->
@@ -76,6 +87,18 @@
   <div class="fakeimg2"><div class="" onloadedmetadata="loadData()" id="secondPost"></div></div>
   <!-- <p id="secondPostLead">Some text..</p>
   <p id="secondPostPara">Insert text from text file.</p> -->
+  
+  <h2 class="" id="thirdPostHead">Passion Kiss</h2>
+  <h5 id="thirdPostDesc">a free verse prose piece, written 15 Apr, 2023</h5>
+  <div class="fakeimg2"><div class="" onloadedmetadata="loadData()" id="thirdPost"></div></div>
+  <!-- <p id="secondPostLead">Some text..</p>
+  <p id="secondPostPara">Insert text from text file.</p> -->
+  
+  <h2 class="" id="fourthPostHead">Yes I judge myself</h2>
+  <h5 id="fourthPostDesc">a free verse prose piece, written Dec 25, 2021</h5>
+  <div class="fakeimg2"><div class="" onloadedmetadata="loadData()" id="fourthPost"></div></div>
+  <!-- <p id="secondPostLead">Some text..</p>
+  <p id="secondPostPara">Insert text from text file.</p> -->
 </div>
 
 <div id="footer"class="">
@@ -86,11 +109,15 @@
   var text = ['I smoked alot and this is tobacco and weed,','Nothing but passing gas.', 'I get stimmed.', 'And I flop.', 'How rock bottom of me.', 'But I light another naai still.', 'No bloody chill - just tips of drills,'];//, "That don't look like 'em"];
   var text2 = ["I mean alot bruv, like on some 340","In the morning, dude I'm yawning coz","She be fawning and I'm adoring", "She be that alluring and I finna conjure a 'we'","to be honest a mini mi, or you",
   "Either way don't be so hard on yourself,", "It's not too good for your wealth"];
+  var text3 = ["Passion Kiss,","I inhaled, ","Held breath, ","Wait abated, ","Head sobering, ","What was, ","We doing?"," Playing cross,","The T, to it, ","Gm F Two Tone, To and, ","Flow so Passioned kiss?"];
+  var text4 = ["this is about me, myself and I.","for me to finally demystify, ","the things I tend to first amplify,","as if I'm being crucified, ","held back, proverbial visa denied. ","wandering where I went awry. ","clearly preoccupied I mused, did I?"," trying without a jury to ratify; ","this plantiff seeking sanctified status.","and as I pen this, with hope to testify.","that that day personifies, with my verdict, ","my soul satisfied. ","my sense of self, solidified"];
 
   function loadData() {
     // document.getElementById("firstPost").innerHTML= show.
     text.forEach(element => document.getElementById("firstPost").innerHTML += element + "<br>");
     text2.forEach(element => document.getElementById("secondPost").innerHTML += element + "<br>");
+	text3.forEach(element => document.getElementById("thirdPost").innerHTML += element + "<br>");
+	text4.forEach(element => document.getElementById("fourthPost").innerHTML += element + "<br>");
 }
 
 loadData();

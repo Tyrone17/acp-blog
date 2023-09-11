@@ -1,14 +1,27 @@
 <!DOCTYPE html>
+<!--Copyright (c) 2020, TechServ Business IT
+    All rights reserved.
+    
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are met:
+    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+    3. All advertising materials mentioning features or use of this software must display the following acknowledgement: This product includes software developed by the TechServ Business IT
+    4. Neither the name of the TechServ Business IT nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+    
+    THIS SOFTWARE IS PROVIDED BY TechServ Business IT ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL TechServ Business IT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 <html lang="en">
 <head>
-  <title>a_c_p</title>
+  <title>a_c_p &#169 2020-23</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
   <link href="styling.css" rel="stylesheet">
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script> -->
-  <script src="main.js"></script>
-  <script src="index.js"></script>
+  <script src="index.js" type="text/javascript"></script>
+  <!-- <script src="subscribe.js" type="text/javascript"> -->
+    
+  </script>
   <style>
 
   </style>
@@ -20,7 +33,7 @@
 
 <!--Nav bar-->
 <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center"> -->
-  <nav id="nav" onoffline="showStylesOffline()"  class="">
+  <nav id="nav" class="">
     <div id="header" class="">
       <!-- <a class="navbar-brand " href="#">logo</a> -->
       <a><h1>a_c_p</h1></a>
@@ -28,9 +41,8 @@
     </div>
   <div class="">
     <a class="nav-link active" href="#"><em>have a perspective?</em></a>
-    <ul class="navbar-nav">
-       <!-- <li class="nav-item">
-      </li> -->
+    <ul class="navbar-nav"><li class="nav-item"><a href="subscribe.html" target="top">subscribe</a>
+      </li>
       <li class="nav-item">
         <!-- <a class="nav-link" href="#">twitter</a> -->
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Hey! Check out my bullbars, the only type a pedestrian like me can use;" data-url="https://tyrone17.github.io/acp-blog" data-hashtags="qotd,makeitmakesense" data-dnt="true" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -77,10 +89,11 @@
 
   <!-- For now hide this content -->
   <!-- <h2 class="mt-5" id="secondPostHead">POST HEADING</h2>
-  <h5 id="secondPostDesc">POST description, Nov 11, 2022</h5>
-  <div class="fakeimg">PL</div>
-  <p id="secondPostLead">Some text..</p>
-  <p id="secondPostPara">Insert text from text file.</p> -->
+  <h5 id="secondPostDesc">POST description, Nov 11, 2022</h5>-->
+  <form>
+	<label>Name</label>
+	<input type="text" />
+  </form>
 </div>
 
 
@@ -91,13 +104,29 @@
 <script>
   //var text = ['I smoked alot and this is tobacco and weed,','Nothing but passing gas.', 'I get stimmed.', 'And I flop.', 'How rock bottom of me.', 'But I light another naai still.', 'No bloody chill - just tips of drills,'];//, "That don't look like 'em"];
   var text = ["Because of you:","I gotta get it from u' ekseni,","Because of you:","I gotta pack it in my Danny,","Because of you:","I have to fake it till I make it,","Because of you: ","I have to stay chomping at the bit, ","Because of you. ","You do you and for the rest of us its of 'sjoe', ","Sickening me still how we sent off ou 'Shoes'. ","All we had to was to think further than 2, ","Maar neh, you en yours is mos te cool. ","Because of you:","I know that I am a fool. ","But blue check; matter-of-fact,","Because of me cumming to my censenus,","I learned that my lack of good fats ","Has alot to do me trying to make sense -","For your part, what the kak was I thinking?","You unblinking.","Never flinching, except when you stitching.","Gave me old rope.","Another man would have knotted it - the end.","Fuck me over like that crypto bozo; and still have the stamina to say it's:","Because of me"];
+  var text = ["Because of you:","I gotta get it from u' ekseni,","Because of you:","I gotta pack it in my Danny,","Because of you:","I have to fake it till I make it,","Because of you: ","I have to stay chomping at the bit, ","Because of you. ","You do you and for the rest of us its of 'sjoe', ","Sickening me still how we sent off ou 'Shoes'. ","All we had to was to think further than 2, ","Maar neh, you en yours is mos te cool. ","Because of you:","I know that I am a fool. ","But blue check; matter-of-fact,","Because of me cumming to my censenus,","I learned that my lack of good fats ","Has alot to do me trying to make sense -","For your part, what the kak was I thinking?","You unblinking.","Never flinching, except when you stitching.","Gave me old rope.","Another man would have knotted it - the end.","Fuck me over like that crypto bozo; and still have the stamina to say it's:","Because of me"];
 
   function loadData() {
     // document.getElementById("firstPost").innerHTML= show.
     text.forEach(element => document.getElementById("firstPost").innerHTML += element + "<br>");
-}
+    var sessionNo = localStorage.getItem("userDB");
+    console.log("sessionNo: "+sessionNo)
+  //   if (!sessionNo){
+  //     console.log(localStorage.getItem("subID"))
+  //     console.log(localStorage.getItem("userDB"))
+  //     var DB = sessionNo;
+  //     console.log("SESSIONID"+DB)
+  //     var oDB = DB.split(",")
+  //     console.log(oDB[0],oDB[3])
+
+      
+  //   }else{
+  //     return "End of code run - missing variable"
+  //   }
+  }
 
 loadData();
+
 
 </script>
     
