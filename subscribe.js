@@ -1,5 +1,11 @@
 // create IDs
 acpusubID = Date.now();
+<<<<<<< Updated upstream
+var localEID = localStorage.setItem("subID", acpuserID);
+var localRID = localStorage.getItem("subID");
+var currentUser =[
+    acpuserID=localRID,
+=======
 localStorage.setItem("subID", acpusubID);
 var oSubID = localStorage.getItem("subID");
 console.log(typeof oSubID);
@@ -36,7 +42,6 @@ function getAtt(){
   return ;
 }
 
-document.getElementById("subLink").style.display = "hidden";
 
 // TODO fetch from other pages script
 var user = localStorage.getItem("userID");
@@ -44,56 +49,52 @@ var user = localStorage.getItem("userID");
 
 // TODO Verify email in from
 
+>>>>>>> Stashed changes
 
+];
+// Verify email first in from
 // 	TODO Allocation user EXP for bonus system
-var ecoins =0.0001; 
-
+var electrons =0.0001; 
 // START app
-console.log("acp-blog webapp: v1.0.1");
+console.log("acp-blog webapp: v1.0.1 - "+ localRID);
+var siteSubID = [
+    id= localRID,
+    electrons = electrons
+];
+console.log("acpsub no:. : " + siteSubID.id);
 
-// TODO create an dic
-var who = oSubID;
-var coins = ecoins;
-var transactions =[];
-
-function createSubscriber (user,coins){
+function runDMC (siteSubIDid,siteSubIDelectrons){
     // Exec the code to create incesion into app.
-	subscriberDB = [ 
-        currentUser= person.user,
-        loggedInUser= person.user,
-    ];
-	
-	localStorage.setItem("subscriberDB",subscriberDB);
-  
+    siteSubID.id= localRID;
+    siteSubIDId=siteSubID.id;
+    siteSubID.electrons= electrons;
+    siteSubIDelectrons= siteSubID.electrons;
+    console.log("acpsub electrons wallet balance:. : " + siteSubIDelectrons);
 }
 
-//if (localStorage.getItem("subscriberDB") != null && document.){
-//	return;
-//} else{
-//	createSubscriber();
-//};
+runDMC();
 
 
-//function fetchDMC (){
+function fetchDMC (){
     // exec the code to create a suture
-  //  var userPro = localStorage.getItem("subID");
-    //var userRootApp = localStorage.getItem("userID");
-    //console.log(userPro);
-    //checkTwo = true;
+    var userPro = localStorage.getItem("subID");
+    var userRootApp = localStorage.getItem("userID");
+    console.log(userPro);
+    checkTwo = true;
     
-   // userDB=[ 
-    //    currentUser=userPro,
-     //   loginInUser=userRootApp,
-       // checkTwo = true,
-       // coins=siteSubID.electrons
+    userDB=[ 
+        currentUser=userPro,
+        loginInUser=userRootApp,
+        checkTwo = true,
+        coins=siteSubID.electrons
         
-    //]
-    //localStorage.setItem("userDB", userDB) 
-    //console.log("current MAC Address obtained: " + coins + " sigmasixsofa\n")
-    //console.log(siteSubID.electrons)
-//}
+    ]
+    localStorage.setItem("userDB", userDB) 
+    console.log("current MAC Address obtained: " + coins + " sigmasixsofa\n")
+    console.log(siteSubID.electrons)
+}
 
-//fetchDMC()
+fetchDMC()
 
 // export default function DAAP (){
 //     var ce = fetchDMC();
